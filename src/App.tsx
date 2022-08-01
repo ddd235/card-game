@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Game numberOfPlayers={4} />
+      <Game numberOfPlayers={2} />
     </div>
   );
 }

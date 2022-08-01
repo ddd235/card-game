@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+# Card Game React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+
+It uses the free Deck of Cards API as a backend.
+API documentation is here https://deckofcardsapi.com/
+
 
 ## Available Scripts
 
 In the project directory, you can run:
+## `npm install`
 
-### `npm start`
+## `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## How to play
+THE PACK
+Players use one standard deck of 52 cards.
 
-### `npm test`
+OBJECT OF THE GAME
+Be the first player to to accumulate the most points.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+CARD VALUES/SCORING
+After comparison of the values, the point is going to the player that has the higher card(10 is higher than 8, King is higher than 10, Ace wins over all).
 
-### `npm run build`
+THE DEAL
+Each player is dealt 1 card.
+When both cards have the same value (ex. two aces) they should go back to deck and deck will be reshuffled.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+THE PLAY
+Open the app and the game starts with a shuffled deck and 2 cards drawn, one for each player.
+To draw cards press on the card faced back, that represents the deck.
+When there are no more cards to play, a message will be shown announcing the winner.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Limitations
+ - Game is designed to work with more than 2 players, should have an input to type the players number
+ - Winner decision must be improved in case 2 players have same number of points, for now only the first found gets to win.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

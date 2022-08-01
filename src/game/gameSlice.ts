@@ -76,7 +76,7 @@ const initialState: GameState = {
     }
   ],
   deckId: "",
-  remaining: 50,
+  remaining: 52,
   playersPoints: [],
   reshuffle: 0,
   shouldReshuffle: false
